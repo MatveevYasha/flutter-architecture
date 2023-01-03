@@ -1,5 +1,5 @@
 class DumnyService {
-  bool getStatus() {
-    return true;
+  int getStatus(number) {
+    return number + number;
   }
 }
