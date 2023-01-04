@@ -3,11 +3,11 @@ import 'dart:async';
 import 'package:flutter_application_1/data/servises.dart';
 
 class MainBloc {
-  final DumnyService dumnyService;
+  final IncrementService incrementService;
   final StreamController<int> _eventsController = StreamController();
 
   MainBloc({
-    required this.dumnyService,
+    required this.incrementService,
   });
 
   void add(int event) {

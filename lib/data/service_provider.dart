@@ -1,3 +1,4 @@
+import 'package:flutter_application_1/data/implementation/internals.dart';
 import 'package:flutter_application_1/data/servises.dart';
 import 'package:get_it/get_it.dart';
 
@@ -9,6 +10,6 @@ class ServiceProvider {
   static final instance = ServiceProvider();
 
   void initialize() {
-    _getIt.registerLazySingleton(() => DumnyService);
+    _getIt.registerLazySingleton<IncrementService>(() => IncrementPlusOne());
   }
 }

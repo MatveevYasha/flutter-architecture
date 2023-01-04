@@ -14,25 +14,18 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   bool toggle = false;
   int _counter = 0;
-  // late final MainBloc _mainBloc;
+  late final MainBloc _mainBloc;
 
   @override
   void initState() {
     super.initState();
-    // _mainBloc = BlocFactory().get();
-    // _mainBloc.add(_counter);
+    _mainBloc = BlocFactory().get();
   }
-
-  // void _switchToggle() {
-  //   setState(() {
-  //     _mainBloc.add(_counter);
-  //     toggle = !toggle;
-  //   });
-  // }
 
   void _increment() {
     setState(() {
-      // _mainBloc.dumnyService.getStatus(_counter);
+      _mainBloc.incrementService.getStatus(_counter);
+      _counter = _mainBloc.incrementService.getStatus(_counter);
     });
   }
 
@@ -49,14 +42,6 @@ class _MyHomePageState extends State<MyHomePage> {
             fontSize: 48,
           ),
         ),
-        // Container(
-        //   height: toggle ? 100 : 200,
-        //   width: toggle ? 200 : 100,
-        //   decoration: BoxDecoration(
-        //     borderRadius: BorderRadius.circular(20),
-        //     color: toggle ? Colors.amber : Colors.black,
-        //   ),
-        // ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _increment,

@@ -1,5 +1,3 @@
-class DumnyService {
-  int getStatus(number) {
-    return number + number;
-  }
+abstract class IncrementService {
+  int getStatus(number);
 }
