@@ -109,6 +109,13 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  module_data:
+    dependency: transitive
+    description:
+      path: "packages/module_data"
+      relative: true
+    source: path
+    version: "0.0.1"
   path:
     dependency: transitive
     description:
