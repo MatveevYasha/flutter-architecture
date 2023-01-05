@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/businnes/bloc_factory.dart';
-import 'package:flutter_application_1/businnes/main_bloc.dart';
+import 'package:module_busines/module_busines.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});

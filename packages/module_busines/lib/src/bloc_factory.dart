@@ -1,13 +1,11 @@
-import 'package:flutter_application_1/businnes/main_bloc.dart';
-import 'package:flutter_application_1/data/service_provider.dart';
 import 'package:get_it/get_it.dart';
+import 'package:module_busines/src/main_bloc.dart';
+import 'package:module_data/module_data.dart';
 
 class BlocFactory {
   static final _getIt = GetIt.I;
 
   T get<T extends Object>() => _getIt.get<T>();
-
-  // может быть попробовать 1 раз инициализировать гет икс
 
   static final instance = BlocFactory();
 

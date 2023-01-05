@@ -1,6 +1,7 @@
-import 'package:flutter_application_1/data/implementation/internals.dart';
-import 'package:flutter_application_1/data/servises.dart';
 import 'package:get_it/get_it.dart';
+import 'package:module_data/src/implementation/internals.dart';
+
+import 'package:module_data/src/servises.dart';
 
 class ServiceProvider {
   static final _getIt = GetIt.I;

@@ -1,4 +1,4 @@
-import 'package:flutter_application_1/data/servises.dart';
+import 'package:module_data/src/servises.dart';
 
 class IncrementPlusOne implements IncrementService {
   @override

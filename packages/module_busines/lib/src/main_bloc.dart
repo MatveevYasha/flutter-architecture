@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter_application_1/data/servises.dart';
+import 'package:module_data/module_data.dart';
 
 class MainBloc {
   final IncrementService incrementService;
