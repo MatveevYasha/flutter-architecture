@@ -34,6 +34,8 @@ dependencies:
   get_it: ^7.2.0
   module_busines:
     path: packages/module_busines
+  provider: ^6.0.5
+  dart_code_metrics: ^5.4.0
 
 
   # The following adds the Cupertino Icons font to your application.
