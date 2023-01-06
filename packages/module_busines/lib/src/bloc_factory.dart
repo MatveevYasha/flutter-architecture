@@ -12,7 +12,7 @@ class BlocFactory {
   void initialize() {
     ServiceProvider.instance.initialize();
     _getIt.registerFactory(() => MainBloc(
-          incrementService: ServiceProvider.instance.get(),
+          userService: ServiceProvider.instance.get(),
         ));
   }
 }
